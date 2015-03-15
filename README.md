@@ -1,6 +1,6 @@
 # My H.O.A
 
-This app will help HAO work more efficiently and bring neighbors together
+This app will help H.O.A work more efficiently and bring neighbors together
 
 We will create 2 mayor areas: 
 * Managers
