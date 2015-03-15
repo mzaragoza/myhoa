@@ -15,7 +15,10 @@ The residents that are NOT on the board will be able to have:
 * setting to set email and/or sms alerts
 * create new post with in topics
   * residents will have the option to post anonimusly or sing there posts
-* vote up/down on all residents post (this will show support or agains on residets feeling, this will alos be anonimus to prebent retaiation from other reients ) 
+  * residents will be able to comment on other residents post 
+  * vote up/down on all residents post (this will show support or agains on residets feeling, this will alos be anonimus to prebent retaiation from other reients ) 
+  * residents will be able to vote (+/-) on comments 
+  * residents will be able to flag off topics posts and comeents 
 * read minuts
 * view event calendar 
 * view budget 
@@ -26,6 +29,9 @@ The residents that are NOT on the board will be able to have:
 
 Board member will be able to:
 * set topics
+* review flags
+* close posts (a close post will no longet allow other residents to comment on)
+* delete posts (a deleted post will no longet allow anyone to see it any more)
 * set minuts 
 * set event calendar 
 * set budget 
