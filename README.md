@@ -38,4 +38,5 @@ Board member will be able to:
 * set budget 
 * set emergency Numbers 
 * set residents phone numbers 
+* set social media 
 

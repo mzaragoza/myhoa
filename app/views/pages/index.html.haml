@@ -1,0 +1,32 @@
+%section.main-tagline
+  .container
+    .row
+      .col-lg-8.col-md-8.col-sm-12.col-xs-12
+        %h1.blog-title our Awesome Blog
+        %h3.blog-subtitle Candy canes sesame snaps apple pie.
+      .col-lg-4.col-md-4.col-sm-12.col-xs-12
+        .search-form
+          %form{:role => "form"}
+            .form-group
+              %input.form-control{:placeholder => "Search", :type => "text"}/
+              %button{:type => "submit"}
+                %i.app-icons-search-copy.app-icons-large
+%section.posts-container
+  .container
+    .row
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+        - 10.times do
+          %article.post-container
+            %h3.title
+              = link_to Faker::Lorem.words(rand(5)+1).join(' ').titleize, '#'
+            %ul.list-unstyled.list-inline.list-categories
+              %li= link_to Faker::Lorem.words(rand(5)+1).join(' ').titleize, '#'
+            %figure.post-pic
+              %img.img-responsive{:alt => "img", :src => "http://placehold.it/1100x190"}/
+            %p= Faker::Lorem.paragraph
+            %ul.list-unstyled.list-inline.list-post-information
+              %li.pull-left
+                Post on #{(Date.today - rand(30).days).strftime('%D')} by
+                #{Faker::Name.name}
+              %li.pull-right
+                = link_to 'Read More', '#', class: 'btn btn-white'

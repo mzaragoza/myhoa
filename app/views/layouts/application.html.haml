@@ -1,0 +1,93 @@
+-#%html
+  %head
+    %title Myhoa
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = yield
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    /[if IE] <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %link{:href => "/assets/img/favicon.ico", :rel => "shortcut icon"}/
+    %title Inka
+    %link{:href => "/assets/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/css/app-icons.css", :rel => "stylesheet"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Vast+Shadow|Rokkitt:400,700", :rel => "stylesheet"}/
+    %link{:href => "/assets/plugins/revolution/examples-sources/rs-plugin/css/settings.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/plugins/accordion/dist/css/accordion-slider.min.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/css/styles.css", :rel => "stylesheet"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+  %body
+    #section0.navbar-wrapper
+      .container
+        .row
+          .col-lg-2.col-md-2.col-sm-12.col-xs-12
+            %a.logo{:href => "index.html"}
+              %img{:alt => "img", :src => "/assets/img/Logo.png"}/
+          .col-lg-3.col-md-3.col-sm-12.col-xs-12
+            %ul.list-unstyled.list-inline.socials
+              %li
+                %a{:href => "#"}
+                  %i.app-icons-twitter.app-icons-large
+              %li
+                %a{:href => "#"}
+                  %i.app-icons-facebook.app-icons-large
+              %li
+                %a{:href => "#"}
+                  %i.app-icons-google-plus.app-icons-large
+              %li
+                %a{:href => "#"}
+                  %i.app-icons-dribbble.app-icons-large
+              %li
+                %a{:href => "#"}
+                  %i.app-icons-youtube.app-icons-large
+          .col-lg-7.col-md-7.col-sm-12.col-xs-12
+            %a.menu-link{:href => "#menu"} Menu
+            %nav#menu.menu{:role => "navigation"}
+              %ul.sf-menu
+                %li.has-subnav.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == 'index'}"}
+                  = link_to 'Home', root_path, class: 'first-link'
+                %li.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == '1index'}"}
+                  = link_to 'About', '#', class: 'first-link'
+                %li.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == '1index'}"}
+                  = link_to 'Features', '#', class: 'first-link'
+                %li.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == '1index'}"}
+                  = link_to 'Portfolio', '#', class: 'first-link'
+                %li.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == '1index'}"}
+                  = link_to 'Blog', '#', class: 'first-link'
+                %li.first-list-item{class: "#{'active' if params[:controller] == 'pages' and params[:action] == '1index'}"}
+                  = link_to 'Contact', '#', class: 'first-link'
+    = yield
+    %footer
+      .footer-rights-container
+        .container
+          .row
+            .col-lg-4.col-md-4.col-col-sm-6.col-xs-12
+              %a.footer-logo{:href => "#"}
+                %img{:alt => "footerlogo", :src => "/assets/img/footerLogo.png"}/
+            .col-lg-8.col-md-8.col-col-sm-6.col-xs-12
+              %p.copy-rights.pull-right
+                Copyright © 2014 - #{Date.today.strftime('%Y')} #{ link_to 'My H.O.A.', root_path()} All rights reserved. 
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')
+    %script{:src => "/assets/js/bootstrap.min.js"}
+    %script{:src => "/assets/plugins/revolution/examples-sources/rs-plugin/js/jquery.themepunch.plugins.min.js"}
+    %script{:src => "/assets/plugins/revolution/examples-sources/rs-plugin/js/jquery.themepunch.revolution.min.js"}
+    %script{:src => "/assets/plugins/accordion/dist/js/jquery.accordionSlider.min.js"}
+    %script{:src => "/assets/forms/footer-form/js/form.js"}
+    %script{:src => "/assets/js/plugins/plugins.min.js"}
+    %script{:src => "/assets/js/main.js"}
