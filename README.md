@@ -27,6 +27,7 @@ The residents that are NOT on the board will be able to have:
 * Update personal phone number
 
 
+# Board
 Board member will be able to:
 * set topics
 * review flags
