@@ -27,7 +27,8 @@ The residents that are NOT on the board will be able to have:
 * view emergency numbers 
 * view residents phone numbers 
 * Update personal phone number
-
+* Add / remove Members of household
+* view Expense
 
 # Board
 Board member will be able to:
@@ -41,7 +42,8 @@ Board member will be able to:
 * set emergency Numbers 
 * set residents phone numbers 
 * set social media 
-
+* assing main person to a propery (address)
+* set Expense
 
 ## Note on Patches/Pull Requests
 
