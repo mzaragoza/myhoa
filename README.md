@@ -1,4 +1,3 @@
-
 # My H.O.A
 
 * Sample Link https://myhoa-dev.herokuapp.com/
