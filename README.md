@@ -55,6 +55,15 @@ Board member will be able to:
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
+
+## Contributions
+
+If you want to contribute, please:
+
+  * Fork the project.
+  * Make your feature addition or bug fix.
+  * Send me a pull request on Github.
+
 ## Copyright
 
 Copyright (c) 2013 Moises Zaragoza. See LICENSE for details.
